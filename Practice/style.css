@@ -1,0 +1,82 @@
+html{
+    overflow: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+body{
+    display: flex;
+    background: linear-gradient(320deg, rgb(255, 0, 0), rgb(0, 0, 255));
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: cursive;
+    color: lightgray;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    width: 25em;
+    /* height: 30em; */
+    padding: 20px;
+    border-radius: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    align-items: center;
+}
+
+.photoFrame{
+    background-image: url(image.png);
+    height: 225px;
+    width: 225px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 20px 1px black;
+}
+
+h1{
+    text-shadow: 0px 3px rgb(20, 20, 20);
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 10px 0px;
+}
+
+li{
+    margin: 0;
+}
+
+button{
+    margin-top: 15px;
+    padding: 5px 20px;
+    font-size: 28px;
+    background-color: darkgreen;
+    box-shadow: 0px 2px rgb(0, 60, 0);
+    border: 0;
+    cursor: pointer;
+    border-radius: 12px;
+    color: rgb(200, 200, 200);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover{
+    background-color: green;
+    transform: scale(1.05);
+}
+
+button:active{
+    background-color: lightgreen;
+}
